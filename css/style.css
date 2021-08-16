@@ -11,7 +11,6 @@
     background-color: var(--color-background2);
     
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -23,18 +22,14 @@ html {
     background-position: top;
     background-repeat: no-repeat;
     background-size:contain;
-    
     min-height: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
     overflow: hidden;
     margin: 0;
-    
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
 }
@@ -43,16 +38,15 @@ body {
     min-width: min-content;
     width: 10wv;
     height: 78vh;
-    /*border: 2px solid yellow;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--color-base);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
 }
 main {
-    /*border: 1px solid greenyellow;*/
     padding: 0 5vw;
 }
 .image {
@@ -63,7 +57,6 @@ main {
     padding-bottom: 0;
     padding: 0;
     margin: 0;
-    /*border: 2px solid red;*/
 }
 .image img {
     padding: 0;
@@ -71,7 +64,6 @@ main {
     height: 100%;
 }
 .main {
-    /*border: 1px solid red;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,7 +75,6 @@ main {
     flex-grow: 1;
 }
 .summary {
-    /*border: 1px solid violet;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -107,7 +98,6 @@ main {
 .plan {
     width: 100%;
     height: 9vh;
-    /*border: 1px solid lightcoral;*/
     display: flex;
     flex-direction: initial;
     justify-content: space-between;
@@ -118,17 +108,12 @@ main {
     flex-grow: 1;
 }
 .plan-icon {
-    /*border: 1px dotted darkgray;*/
-    /*background-color: #e5ecff;*/
     flex-grow: 1;
-    
 }
 .plan-icon img {
     height:6vh;
 }
 .plan-text {
-    /*border: 1px dotted darkgray;*/
-    
     flex-grow: 1;
 }
 .plan-text h2 {
@@ -141,7 +126,6 @@ main {
     padding-top: 0.3vh;
 }   
 .plan-link {
-    /*border: 1px dotted darkgray;*/
     text-align: end;
     flex-grow: 4;
 }
@@ -162,7 +146,6 @@ main {
     flex-grow: 1;
 }
 .order-button {
-    /*border: 1px dotted black;*/
     display: block;
     width: 100%;
     text-align: center;
@@ -213,11 +196,8 @@ a {
     color: #5443b6;
 }
 
-
-
 @media screen and (min-width: 600px){
     html {
-        /*border: 3px solid red;*/
         background-image: url("../images/pattern-background-desktop.svg");
         justify-content: center;
     }
@@ -228,7 +208,7 @@ a {
         padding: 0 0;
     }
     .spacer1 {
-        flex-grow: 3;
+        flex-grow: 2;
     }
     .summary {
         flex-grow: 1;
@@ -266,7 +246,6 @@ a {
         padding-top: 0.3vh;
     }   
     .plan-link {
-        /*border: 1px dotted darkgray;*/
         text-align: end;
         font-size: initial;
         flex-grow: 4;
@@ -288,9 +267,8 @@ a {
     }
 }
 @media screen and (max-height: 400px) {
-    
     html {
         background-image:unset;
-        background-color: var(--color-background) !important;    
+        background-color: var(--color-background);
     }
 }
